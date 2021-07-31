@@ -82,7 +82,7 @@
     ],
     "post-create-project-cmd": [
       "@php artisan key:generate --ansi",
-      "@php artisan jwt:secret --ansi"
+      "@php artisan jwt:secret -f --ansi"
     ],
     "post-update-cmd": [
       "cghooks update"
