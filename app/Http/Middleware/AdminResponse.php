@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use App\Exceptions\AdminException;
 use Closure;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
@@ -13,7 +14,7 @@ class AdminResponse
 {
     /**
      * Handle an incoming request.
-     * admin接口数据返回结果内容的处理.
+     * admin 接口数据返回结果内容的处理.
      *
      * @return mixed
      */
@@ -37,6 +38,10 @@ class AdminResponse
                     $errors = $e->errors();
                     $message = Arr::first($errors)[0];
                     $data = $errors;
+                } elseif ($e instanceof AuthenticationException) {
+                    $httpStatus = 401;
+                    $code = 'unauthenticated';
+                    $message = $e->getMessage();
                 } else {
                     //未知错误
                     $code = 'unknown';
