@@ -42,4 +42,9 @@ return [
      * 菜单定义
      */
     'sidebars' => $sidebars->toArray(),
+
+    /*
+     * 角色定义类
+     */
+    'role_class' => \Vinlon\Laravel\LayAdmin\AdminRole::class,
 ];

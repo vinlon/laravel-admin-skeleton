@@ -17,7 +17,7 @@
     "guzzlehttp/guzzle": "^7.0.1",
     "laravel/framework": "^8.0",
     "laravel/tinker": "^2.5",
-    "vinlon/laravel-lay-admin": "^0.7.2",
+    "vinlon/laravel-lay-admin": "^0.8",
     "vinlon/laravel-sql-logger": "^0.2"
   },
   "require-dev": {

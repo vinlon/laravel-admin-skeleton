@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bb94f4c608d1bbfa43075f9fdcaa892",
+    "content-hash": "32c4353cb3fe3c69a6175d8386bad12e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6262,16 +6262,16 @@
         },
         {
             "name": "vinlon/laravel-lay-admin",
-            "version": "0.7.4",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vinlon/laravel-lay-admin.git",
-                "reference": "cee5032409de501ae53b3f0c629acafff917d35e"
+                "reference": "313007d2c9438274ec6ffebd96a1e57c7827e0dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vinlon/laravel-lay-admin/zipball/cee5032409de501ae53b3f0c629acafff917d35e",
-                "reference": "cee5032409de501ae53b3f0c629acafff917d35e",
+                "url": "https://api.github.com/repos/vinlon/laravel-lay-admin/zipball/313007d2c9438274ec6ffebd96a1e57c7827e0dd",
+                "reference": "313007d2c9438274ec6ffebd96a1e57c7827e0dd",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6281,12 +6281,13 @@
                 ]
             },
             "require": {
+                "bensampo/laravel-enum": "^3.0",
                 "tymon/jwt-auth": "^1.0"
             },
             "require-dev": {
                 "brainmaestro/composer-git-hooks": "^2.8",
-                "friendsofphp/php-cs-fixer": "^2.17",
-                "laravel/framework": "7.*"
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "laravel/framework": "8.*"
             },
             "type": "library",
             "extra": {
@@ -6316,9 +6317,9 @@
             "description": "LayUI Admin Starter for Laravel Project",
             "support": {
                 "issues": "https://github.com/vinlon/laravel-lay-admin/issues",
-                "source": "https://github.com/vinlon/laravel-lay-admin/tree/0.7.4"
+                "source": "https://github.com/vinlon/laravel-lay-admin/tree/0.8.1"
             },
-            "time": "2021-09-03T06:43:27+00:00"
+            "time": "2021-09-03T11:01:29+00:00"
         },
         {
             "name": "vinlon/laravel-sql-logger",
