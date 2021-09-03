@@ -11,8 +11,8 @@ use BenSampo\Enum\Enum;
  */
 final class AvailableStatus extends Enum implements LocalizedEnum
 {
-    const ENABLED = 'enabled';
-    const DISABLED = 'disabled';
+    public const ENABLED = 'enabled';
+    public const DISABLED = 'disabled';
 
     public function toArray()
     {
