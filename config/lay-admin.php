@@ -16,9 +16,7 @@ $sidebars->add(
     SideBar::create('_resource', '资源管理')->iconClass('layui-icon-component')->jumpTo('_base/system/resource/')
 );
 $sidebars->add(
-    SideBar::create('_user', '用户')->iconClass('layui-icon-user')
-        ->add(SideBar::create('_user.list', '后台管理员')->jumpTo('_base/user/user/'))
-        ->add(SideBar::create('_user.role', '角色管理')->jumpTo('_base/user/role/'))
+    SideBar::create('_user', '系统管理员')->iconClass('layui-icon-key')->jumpTo('_base/user/user/')
 );
 $sidebars->add(
     SideBar::create('_my', '我的')->iconClass('layui-icon-username')
@@ -42,9 +40,4 @@ return [
      * 菜单定义
      */
     'sidebars' => $sidebars->toArray(),
-
-    /*
-     * 角色定义类
-     */
-    'role_class' => \Vinlon\Laravel\LayAdmin\AdminRole::class,
 ];
