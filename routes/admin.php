@@ -2,5 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::middleware(['auth:lay-admin', \App\Http\Middleware\AdminResponse::class])->group(function () {
+Route::middleware(['auth:lay-admin', AdminResponse::class])->group(function () {
 });
