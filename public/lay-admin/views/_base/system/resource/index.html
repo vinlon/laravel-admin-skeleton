@@ -210,38 +210,6 @@
       })
     }
 
-    let showContentForm = function (data) {
-      let title = data ? '内容修改' : '内容添加'
-      data = data || {};
-      admin.popup({
-        title: title
-        , area: ['800px', '800px']
-        , id: 'popup_content'
-        , success: function (layero, index) {
-          view(this.id).render('_base/system/resource/content_form', data).done(function () {
-            editor.render({
-              elem: "#content"
-              , height: 500
-            }, function (opt, edit) {
-              edit.setContent(data.content || '');
-            });
 
-            form.render(null, 'form_content');
-            form.on('submit(submit_content)', function (d) {
-              let field = d.field;
-              field.content = editor.get('#content').getContent();
-              if (!field.content) {
-                layer.tips('请输入内容详情', $('#labelContent'))
-                return;
-              }
-              admin.post('lay-admin/contents', field, function (res) {
-                layer.close(index);
-                table.reload('table_content');
-              })
-            })
-          })
-        }
-      })
-    }
   })
 </script>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1448cb00884d7eb754bdb6d95318ab2",
+    "content-hash": "ac83728254d27b8bff727aa0b6ef0d74",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6478,6 +6478,61 @@
                 "source": "https://github.com/vinlon/laravel-lay-admin/tree/0.10.4"
             },
             "time": "2021-11-04T12:08:54+00:00"
+        },
+        {
+            "name": "vinlon/laravel-options",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vinlon/laravel-options.git",
+                "reference": "a52bd88d10469b18542b80d3431b075928f2d718"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vinlon/laravel-options/zipball/a52bd88d10469b18542b80d3431b075928f2d718",
+                "reference": "a52bd88d10469b18542b80d3431b075928f2d718",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require-dev": {
+                "laravel/framework": "^7.30"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Vinlon\\Laravel\\Options\\OptionsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Vinlon\\Laravel\\Options\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Global key value storage",
+            "keywords": [
+                "laravel-options",
+                "opt",
+                "options"
+            ],
+            "support": {
+                "issues": "https://github.com/vinlon/laravel-options/issues",
+                "source": "https://github.com/vinlon/laravel-options/tree/0.1.2"
+            },
+            "time": "2021-04-21T08:10:05+00:00"
         },
         {
             "name": "vinlon/laravel-sql-logger",

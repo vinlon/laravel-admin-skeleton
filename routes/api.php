@@ -12,4 +12,7 @@
 */
 
 Route::middleware([\App\Http\Middleware\ApiResponse::class])->group(function () {
+    # 资源管理
+    Route::get('resource/images', 'ResourceController@getImages');
+    Route::get('resource/texts', 'ResourceController@getTexts');
 });
