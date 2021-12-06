@@ -125,7 +125,7 @@ layui.define(['jquery'], function (exports) {
     option.toolbar = [
       'code | formatselect  fontselect fontsizeselect  |numlist bullist | link image media table anchor | hr pagebreak',
       'preview | forecolor backcolor | bold italic underline strikethrough| alignleft aligncenter alignright alignjustify | outdent indent | removeformat',
-    ];
+    ];;
 
     option.toolbar_mode = 'floating';
     option.quickbars_selection_toolbar = 'h1 h2 h3 forecolor backcolor';
