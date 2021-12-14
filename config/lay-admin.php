@@ -39,6 +39,14 @@ return [
     'display_name' => env('LAY_ADMIN_DISPLAY_NAME', '后台管理系统'),
 
     /*
+     * 自定义middleware
+     */
+    'middlewares' => [
+        \App\Http\Middleware\Base64Decrypt::class, //注：Decrypt必须在XssDefense之前
+        \App\Http\Middleware\XssDefense::class,
+    ],
+
+    /*
      * 菜单定义
      */
     'sidebars' => $sidebars->toArray(),
