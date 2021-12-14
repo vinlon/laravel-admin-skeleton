@@ -6908,16 +6908,16 @@
         },
         {
             "name": "vinlon/laravel-lay-admin",
-            "version": "0.12.1",
+            "version": "0.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vinlon/laravel-lay-admin.git",
-                "reference": "3f33071c56e9aa01d8bdea640b0f9f34d8f51dc0"
+                "reference": "5d91a92952ef840a2f9bf257bf32da262d13fcfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vinlon/laravel-lay-admin/zipball/3f33071c56e9aa01d8bdea640b0f9f34d8f51dc0",
-                "reference": "3f33071c56e9aa01d8bdea640b0f9f34d8f51dc0",
+                "url": "https://api.github.com/repos/vinlon/laravel-lay-admin/zipball/5d91a92952ef840a2f9bf257bf32da262d13fcfb",
+                "reference": "5d91a92952ef840a2f9bf257bf32da262d13fcfb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6967,9 +6967,9 @@
             "description": "LayUI Admin Starter for Laravel Project",
             "support": {
                 "issues": "https://github.com/vinlon/laravel-lay-admin/issues",
-                "source": "https://github.com/vinlon/laravel-lay-admin/tree/0.12.1"
+                "source": "https://github.com/vinlon/laravel-lay-admin/tree/0.12.2"
             },
-            "time": "2021-12-14T13:05:16+00:00"
+            "time": "2021-12-14T13:24:34+00:00"
         },
         {
             "name": "vinlon/laravel-options",
