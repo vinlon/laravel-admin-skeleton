@@ -41,7 +41,7 @@ return [
     /*
      * 自定义middleware
      */
-    'middlewares' => [
+    'middleware' => [
         \App\Http\Middleware\Base64Decrypt::class, //注：Decrypt必须在XssDefense之前
         \App\Http\Middleware\XssDefense::class,
     ],
