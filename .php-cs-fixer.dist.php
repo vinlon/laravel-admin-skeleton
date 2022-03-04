@@ -17,8 +17,10 @@ $rules = [
     '@PhpCsFixer' => true,
     'concat_space' => ['spacing' => 'one'],
     'single_line_comment_style' => false,
+    'multiline_whitespace_before_semicolons' => false,
 ];
 
 $config = new \PhpCsFixer\Config();
+
 return $config->setRules($rules)
     ->setFinder($finder);
